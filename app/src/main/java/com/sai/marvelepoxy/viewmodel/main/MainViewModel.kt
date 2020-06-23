@@ -26,6 +26,10 @@ class MainViewModel @ViewModelInject constructor(private val repository: MainRep
     }
 
     private fun fetchMarvelPosters() {
+        if (_posterLiveData.value is Success) {
+            return
+        }
+
         _posterLiveData.value = Loading
         viewModelScope.launch {
             try {
