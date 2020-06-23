@@ -19,7 +19,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 
 @AndroidEntryPoint
-class MainActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity(), MarvelHeroController.IControllerCallback {
 
     private val mainViewModel by viewModels<MainViewModel>()
     private val posters = mutableListOf<Poster>()
@@ -28,7 +28,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val marvelHeroController = MarvelHeroController().apply {
+        val marvelHeroController = MarvelHeroController(this).apply {
             spanCount = 2
         }
 
@@ -59,5 +59,9 @@ class MainActivity : AppCompatActivity() {
             })
 
 
+    }
+
+    override fun onHeroClicked(poster: Poster) {
+        Toast.makeText(this, "Hero selected: ${poster.name}", Toast.LENGTH_SHORT).show()
     }
 }

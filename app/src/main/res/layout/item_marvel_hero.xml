@@ -8,7 +8,8 @@
     app:cardElevation="4dp"
     android:layout_marginTop="5dp"
     android:layout_marginStart="5dp"
-    app:cardCornerRadius="10dp">
+    app:cardCornerRadius="10dp"
+    android:id="@+id/marvel_hero_card_view">
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">

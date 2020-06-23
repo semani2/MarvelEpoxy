@@ -7,7 +7,12 @@ import com.sai.marvelepoxy.view.models.marvelTitleImage
 import com.sai.marvelepoxy.view.models.marvelTitleText
 import java.util.*
 
-class MarvelHeroController: TypedEpoxyController<List<Poster>>() {
+class MarvelHeroController(private val callback: IControllerCallback): TypedEpoxyController<List<Poster>>() {
+
+    interface IControllerCallback {
+        fun onHeroClicked(poster: Poster)
+    }
+
     override fun buildModels(data: List<Poster>?) {
 
         marvelTitleImage {
@@ -25,6 +30,9 @@ class MarvelHeroController: TypedEpoxyController<List<Poster>>() {
                 name(poster.name)
                 imageUrl(poster.poster)
                 backgroundColor(poster.color)
+                clickListener { _, _, _, _ ->
+                    callback.onHeroClicked(poster)
+                }
             }
         }
     }
