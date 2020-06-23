@@ -1,4 +1,4 @@
-package com.sai.marvelepoxy.persistence
+package com.sai.marvelepoxy.data.persistence
 
 import androidx.room.Dao
 import androidx.room.Insert

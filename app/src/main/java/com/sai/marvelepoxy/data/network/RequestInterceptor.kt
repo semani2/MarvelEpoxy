@@ -1,4 +1,4 @@
-package com.sai.marvelepoxy.network
+package com.sai.marvelepoxy.data.network
 
 import okhttp3.Interceptor
 import okhttp3.Response

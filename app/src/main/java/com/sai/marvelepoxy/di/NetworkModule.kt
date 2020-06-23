@@ -1,7 +1,7 @@
 package com.sai.marvelepoxy.di
 
-import com.sai.marvelepoxy.network.IMarvelService
-import com.sai.marvelepoxy.network.RequestInterceptor
+import com.sai.marvelepoxy.data.network.IMarvelService
+import com.sai.marvelepoxy.data.network.RequestInterceptor
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

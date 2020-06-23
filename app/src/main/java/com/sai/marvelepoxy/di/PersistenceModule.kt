@@ -2,8 +2,8 @@ package com.sai.marvelepoxy.di
 
 import android.content.Context
 import androidx.room.Room
-import com.sai.marvelepoxy.persistence.AppDatabase
-import com.sai.marvelepoxy.persistence.PosterDao
+import com.sai.marvelepoxy.data.persistence.AppDatabase
+import com.sai.marvelepoxy.data.persistence.PosterDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

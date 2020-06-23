@@ -16,11 +16,16 @@ import java.lang.Exception
 
 class MainViewModel @ViewModelInject constructor(private val repository: MainRepository) : ViewModel() {
 
-    private val _posterLiveData: MutableLiveData<MainViewState<List<Poster>>> by lazy { MutableLiveData() }
+    private val _posterLiveData: MutableLiveData<MainViewState<List<Poster>>>
+            by lazy { MutableLiveData<MainViewState<List<Poster>>>() }
     val posterLiveData: LiveData<MainViewState<List<Poster>>>
         get() = _posterLiveData
 
-    fun fetchMarvelPosters() {
+    init {
+        fetchMarvelPosters()
+    }
+
+    private fun fetchMarvelPosters() {
         _posterLiveData.value = Loading
         viewModelScope.launch {
             try {

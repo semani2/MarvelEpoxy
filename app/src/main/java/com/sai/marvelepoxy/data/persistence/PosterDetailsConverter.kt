@@ -1,4 +1,4 @@
-package com.sai.marvelepoxy.persistence
+package com.sai.marvelepoxy.data.persistence
 
 import androidx.room.TypeConverter
 import com.sai.marvelepoxy.model.PosterDetails

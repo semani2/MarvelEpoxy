@@ -1,4 +1,4 @@
-package com.sai.marvelepoxy.network
+package com.sai.marvelepoxy.data.network
 
 import com.sai.marvelepoxy.model.Poster
 import retrofit2.http.GET
