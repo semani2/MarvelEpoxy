@@ -1,7 +1,8 @@
-package com.sai.marvelepoxy
+package com.sai.marvelepoxy.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.sai.marvelepoxy.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
