@@ -28,10 +28,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val marvelHeroController = MarvelHeroController()
+        val marvelHeroController = MarvelHeroController().apply {
+            spanCount = 2
+        }
+
+        val gridLayoutManager = GridLayoutManager(this@MainActivity, 2)
+        gridLayoutManager.spanSizeLookup = marvelHeroController.spanSizeLookup
 
         main_recycler_view.apply {
-            layoutManager = GridLayoutManager(this@MainActivity, 2)
+            layoutManager = gridLayoutManager
             setController(marvelHeroController)
         }
 
