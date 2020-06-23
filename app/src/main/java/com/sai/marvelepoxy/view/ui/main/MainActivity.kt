@@ -1,4 +1,4 @@
-package com.sai.marvelepoxy.ui.main
+package com.sai.marvelepoxy.view.ui.main
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
