@@ -1,7 +1,5 @@
 package com.sai.marvelepoxy.view.models
 
-import android.widget.ImageView
-import com.airbnb.epoxy.EpoxyAttribute
 import com.airbnb.epoxy.EpoxyModelClass
 import com.airbnb.epoxy.EpoxyModelWithHolder
 import com.sai.marvelepoxy.R
