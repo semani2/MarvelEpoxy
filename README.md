@@ -40,6 +40,23 @@ Marvel Epoxy is based on MVVM architecture and a repository pattern.
 ![architecture](https://developer.android.com/topic/libraries/architecture/images/final-architecture.png)
 
 
-## Find this repository useful? :heart:
+## Find this repository useful?
 Support it by joining __[stargazers](https://github.com/semani2/MarvelEpoxy/stargazers)__ for this repository. :star: <br>
 And __[follow](https://github.com/semani2)__
+
+# License
+```xml
+Designed and developed by 2020 semani2 (Sai Emani)
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+```
