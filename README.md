@@ -15,7 +15,10 @@ A sample Marvel heroes application based on MVVM (ViewModel, Coroutines, LiveDat
 <img src = "/previews/details.png" width=250 />
 </p>
 
-## Tech stack & Open-source libraries
+## Download
+Go to the [Releases](https://github.com/semani2/MarvelEpoxy/releases) to download the lastest APK.
+
+## Open-source libraries
 - Minimum SDK level 23
 - [Kotlin](https://kotlinlang.org/)
 - [Coroutines](https://github.com/Kotlin/kotlinx.coroutines)
