@@ -1,5 +1,6 @@
 package com.sai.marvelepoxy.view.ui.main
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels
@@ -11,6 +12,7 @@ import com.sai.marvelepoxy.extensions.hide
 import com.sai.marvelepoxy.extensions.show
 import com.sai.marvelepoxy.model.Poster
 import com.sai.marvelepoxy.view.controllers.MarvelHeroController
+import com.sai.marvelepoxy.view.ui.detail.DetailActivity
 import com.sai.marvelepoxy.view.viewstate.Error
 import com.sai.marvelepoxy.view.viewstate.Loading
 import com.sai.marvelepoxy.view.viewstate.Success
@@ -62,6 +64,9 @@ class MainActivity : AppCompatActivity(), MarvelHeroController.IControllerCallba
     }
 
     override fun onHeroClicked(poster: Poster) {
-        Toast.makeText(this, "Hero selected: ${poster.name}", Toast.LENGTH_SHORT).show()
+        val intent = Intent(this, DetailActivity::class.java)
+        intent.putExtra(DetailActivity.ARG_POSTER_ID, poster.id)
+
+        startActivity(intent)
     }
 }
