@@ -34,6 +34,12 @@ class MainViewModel @ViewModelInject constructor(private val repository: MainRep
         viewModelScope.launch {
             try {
                 val posters = repository.fetchMarvelPosters()
+
+                if (posters.isNullOrEmpty()) {
+                    _posterLiveData.postValue(Error("Error fetching marvel posters"))
+                    return@launch
+                }
+
                 _posterLiveData.postValue(Success(posters))
             } catch (e: Exception) {
                 _posterLiveData.postValue(Error(e.localizedMessage ?: "Error fetching marvel posters"))
