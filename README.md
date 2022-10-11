@@ -48,7 +48,6 @@ Marvel Epoxy is based on MVVM architecture and a repository pattern.
 Support it by joining __[stargazers](https://github.com/semani2/MarvelEpoxy/stargazers)__ for this repository. :star: <br>
 And __[follow](https://github.com/semani2)__
 
-Hello World
 
 # License
 ```xml
